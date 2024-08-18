@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build # Adjust this if you have a different build command
+artifacts:
+  files:
+    - "**/*" # This includes all files for the build output
